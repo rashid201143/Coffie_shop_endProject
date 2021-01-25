@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:background="@color/backgroundColor"
+        tools:context=".MainActivity"
+        android:layout_width="match_parent"
+        android:layoutDirection="rtl"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/aa"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="text"
+                android:layout_marginRight="20dp"
+                android:hint="  اسم المستخدم"
+                android:textColor="@color/colorCoffie"
+                android:textStyle="bold"
+                android:drawablePadding="20dp"
+
+                android:drawableLeft="@drawable/ic_user_label"
+                android:background="@drawable/edit_user_background"
+
+                />
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layoutDirection="rtl"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorCoffie"
+                android:drawablePadding="20dp"
+                android:hint="  كلمه المرور"
+                android:inputType="textPassword"
+                android:textStyle="bold"
+                android:background="@drawable/edit_user_background"
+                android:drawableLeft="@drawable/ic_pass_lable"
+
+                />
+            <info.hoang8f.widget.FButton
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:id="@+id/loin_btn"
+                android:layout_marginBottom="20dp"
+
+                android:layout_marginTop="20dp"
+                android:text="دخول"
+                android:textStyle="bold"
+                android:textSize="25sp"
+
+                tools:ignore="OnClick" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forget_lbl"
+                android:text="نسيت كلمة المرور"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/fbutton_color_pomegranate"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/creat_lbl"
+                android:text="انشاء حساب"
+                android:textSize="20sp"
+                android:textColor="@color/fbutton_color_peter_river"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
