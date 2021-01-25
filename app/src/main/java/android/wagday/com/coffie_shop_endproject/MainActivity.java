@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         log_btn = findViewById(R.id.loin_btn);
         txt_create = findViewById(R.id.creat_lbl);
         final MySQLiteOpenHelper sql=new MySQLiteOpenHelper(this);
