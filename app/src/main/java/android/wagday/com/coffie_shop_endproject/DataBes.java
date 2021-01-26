@@ -10,6 +10,7 @@ import android.wagday.com.coffie_shop_endproject.model.Users;
 
 public class DataBes {
     MySQLiteOpenHelper sql;
+
     private SQLiteDatabase db;
     Context context;
 

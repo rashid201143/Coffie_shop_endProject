@@ -11,7 +11,6 @@ import com.airbnb.lottie.LottieAnimationView;
 public class splash_screen extends AppCompatActivity {
     ImageView image_logo,imge_coff;
     LottieAnimationView lottieAnimationView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
